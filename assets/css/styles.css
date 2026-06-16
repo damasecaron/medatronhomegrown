@@ -1,0 +1,507 @@
+:root {
+  --green: #84ad2d;
+  --gray-text: #a7a7a7;
+  --section-gray: #f0f0f0;
+  --nav-gray: #f5f5f5;
+  --border-gray: #d3d3d3;
+  --black: #050505;
+  --content-width: 944px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--black);
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  background: #fff;
+}
+
+.logo {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 170px;
+  height: auto;
+}
+
+.site-nav {
+  min-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: var(--nav-gray);
+  border-top: 1px solid var(--border-gray);
+  border-bottom: 1px solid #ededed;
+}
+
+.site-nav a {
+  padding: 7px 0 6px;
+  color: #111;
+  font-size: 9px;
+  line-height: 1;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--green);
+}
+
+.section-gray {
+  background: var(--section-gray);
+}
+
+.section-inner {
+  width: min(calc(100% - 112px), var(--content-width));
+  margin: 0 auto;
+}
+
+.intro {
+  min-height: 319px;
+}
+
+.intro-grid {
+  min-height: 319px;
+  display: grid;
+  grid-template-columns: 1.25fr 0.98fr;
+  align-items: center;
+  gap: 56px;
+}
+
+.intro-copy h1 {
+  margin: 0 0 18px;
+  font-size: 46px;
+  line-height: 0.98;
+  letter-spacing: -1.8px;
+  font-weight: 800;
+}
+
+.intro-copy p {
+  max-width: 525px;
+  margin: 0;
+  font-size: 10.5px;
+  line-height: 1.13;
+  font-weight: 600;
+}
+
+.intro-image {
+  width: 389px;
+  height: 272px;
+  object-fit: cover;
+}
+
+.rentals {
+  min-height: 299px;
+  background: #fff;
+}
+
+.rentals-grid {
+  min-height: 299px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 38px;
+  padding-left: 170px;
+  padding-right: 72px;
+}
+
+.rentals-copy {
+  text-align: center;
+}
+
+.rentals-copy h2,
+.academy-copy h2 {
+  margin: 0 0 12px;
+  font-size: 39px;
+  line-height: 0.98;
+  letter-spacing: -1.1px;
+  font-weight: 700;
+  color: var(--gray-text);
+}
+
+.rentals-copy h2 span,
+.academy-copy h2 span {
+  display: block;
+  color: var(--green);
+}
+
+.rentals-copy p {
+  max-width: 318px;
+  margin: 0 auto;
+  font-size: 9.5px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.rentals-image {
+  width: 390px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.academy {
+  min-height: 437px;
+}
+
+.academy-grid {
+  min-height: 437px;
+  display: grid;
+  grid-template-columns: 389px 1fr;
+  align-items: center;
+  gap: 25px;
+}
+
+.academy-image {
+  width: 389px;
+  height: 389px;
+  object-fit: cover;
+}
+
+.academy-copy {
+  padding-left: 0;
+}
+
+.academy-copy p {
+  max-width: 310px;
+  margin: 0;
+  font-size: 9.5px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.contact {
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+}
+
+.contact-inner {
+  width: min(calc(100% - 40px), 600px);
+  padding: 58px 0 64px;
+}
+
+.contact h2,
+.visit h2 {
+  margin: 0 0 16px;
+  color: var(--green);
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.contact p {
+  margin: 0 auto;
+  font-size: 10px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.contact .contact-note {
+  margin-top: 14px;
+  font-weight: 700;
+}
+
+.visit {
+  min-height: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.visit-inner {
+  padding: 40px 20px 42px;
+}
+
+.visit h2 {
+  margin-bottom: 17px;
+}
+
+.visit p {
+  margin: 0 0 10px;
+  font-size: 10px;
+  line-height: 1.15;
+}
+
+.visit a,
+.contact a {
+  text-decoration: none;
+}
+
+.visit a:hover,
+.visit a:focus-visible,
+.contact a:hover,
+.contact a:focus-visible {
+  text-decoration: underline;
+}
+
+@media (max-width: 820px) {
+  .section-inner {
+    width: min(calc(100% - 40px), 680px);
+  }
+
+  .intro,
+  .intro-grid,
+  .rentals,
+  .rentals-grid,
+  .academy,
+  .academy-grid {
+    min-height: 0;
+  }
+
+  .intro-grid,
+  .rentals-grid,
+  .academy-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 48px 0;
+  }
+
+  .intro-copy h1 {
+    font-size: clamp(38px, 9vw, 52px);
+  }
+
+  .intro-copy p,
+  .rentals-copy p,
+  .academy-copy p,
+  .contact p,
+  .visit p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .intro-image,
+  .rentals-image,
+  .academy-image {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .rentals-copy {
+    order: 1;
+  }
+
+  .rentals-image {
+    order: 2;
+  }
+
+  .academy-copy {
+    text-align: center;
+  }
+
+  .academy-copy p {
+    margin-inline: auto;
+  }
+
+  .contact {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 72px;
+  }
+
+  .logo img {
+    width: 155px;
+  }
+
+  .site-nav {
+    gap: 18px;
+  }
+
+  .site-nav a {
+    font-size: 10px;
+  }
+
+  .section-inner {
+    width: min(calc(100% - 28px), 680px);
+  }
+
+  .intro-grid,
+  .rentals-grid,
+  .academy-grid {
+    padding: 34px 0;
+  }
+
+  .rentals-copy h2,
+  .academy-copy h2 {
+    font-size: 35px;
+  }
+}
+
+/* Scale the same layout up on large desktop monitors without changing tablet/mobile. */
+@media (min-width: 1200px) {
+  :root {
+    --content-width: 1500px;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .logo img {
+    width: 220px;
+  }
+
+  .site-nav {
+    min-height: 36px;
+    gap: 38px;
+  }
+
+  .site-nav a {
+    padding: 11px 0 10px;
+    font-size: 12px;
+  }
+
+  .section-inner {
+    width: min(calc(100% - 120px), var(--content-width));
+  }
+
+  .intro,
+  .intro-grid {
+    min-height: clamp(420px, 25vw, 520px);
+  }
+
+  .intro-grid {
+    grid-template-columns: 1.2fr 1fr;
+    gap: clamp(70px, 5vw, 110px);
+  }
+
+  .intro-copy h1 {
+    margin-bottom: 24px;
+    font-size: clamp(58px, 3.6vw, 74px);
+    line-height: 0.98;
+    letter-spacing: -2.5px;
+  }
+
+  .intro-copy p {
+    max-width: 760px;
+    font-size: clamp(14px, 0.85vw, 17px);
+    line-height: 1.28;
+  }
+
+  .intro-image {
+    width: 100%;
+    height: clamp(350px, 21vw, 430px);
+  }
+
+  .rentals,
+  .rentals-grid {
+    min-height: clamp(410px, 23vw, 500px);
+  }
+
+  .rentals-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(55px, 4vw, 90px);
+    padding-left: clamp(120px, 9vw, 180px);
+    padding-right: clamp(80px, 6vw, 130px);
+  }
+
+  .rentals-copy h2,
+  .academy-copy h2 {
+    margin-bottom: 18px;
+    font-size: clamp(50px, 3vw, 62px);
+    letter-spacing: -1.7px;
+  }
+
+  .rentals-copy p,
+  .academy-copy p {
+    font-size: clamp(13px, 0.75vw, 15px);
+    line-height: 1.35;
+  }
+
+  .rentals-copy p {
+    max-width: 500px;
+  }
+
+  .rentals-image {
+    width: 100%;
+    height: clamp(320px, 19vw, 390px);
+  }
+
+  .academy,
+  .academy-grid {
+    min-height: clamp(580px, 32vw, 660px);
+  }
+
+  .academy-grid {
+    grid-template-columns: minmax(500px, 620px) 1fr;
+    gap: clamp(45px, 4vw, 80px);
+  }
+
+  .academy-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .academy-copy p {
+    max-width: 500px;
+  }
+
+  .contact {
+    min-height: 310px;
+  }
+
+  .contact-inner {
+    width: min(calc(100% - 40px), 850px);
+    padding: 76px 0 82px;
+  }
+
+  .contact h2,
+  .visit h2 {
+    margin-bottom: 22px;
+    font-size: 30px;
+  }
+
+  .contact p {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .visit {
+    min-height: 245px;
+  }
+
+  .visit-inner {
+    padding: 58px 20px 62px;
+  }
+
+  .visit p {
+    margin-bottom: 13px;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+}
